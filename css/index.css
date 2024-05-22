@@ -1,0 +1,31 @@
+/* slider */
+.swiper {
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 774px;
+  object-fit: cover;
+}
+.swiper-button-next {
+  color: var(--point) !important;
+  padding-right: 50px;
+}
+.swiper-button-prev {
+  color: var(--point) !important;
+  padding-left: 50px;
+}
+.swiper-pagination {
+  padding-bottom: 50px;
+}
+.swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 0.5 !important;
+}
+.swiper-pagination-bullet-active {
+  background: var(--point) !important;
+  opacity: 1 !important;
+}
