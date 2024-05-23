@@ -29,3 +29,131 @@
   background: var(--point) !important;
   opacity: 1 !important;
 }
+
+/* movieType */
+.tab-menu {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+}
+.tab-menu .tab-btn > h1 {
+  width: 14%;
+  font-family: var(--bold);
+  font-size: 25px;
+}
+.tab-menu .tab-btn {
+  margin-top: 30px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.tab-menu .tab-btn ul {
+  width: 78%;
+  display: flex;
+}
+.tab-menu .tab-btn ul div {
+  width: 1px;
+  background-color: #000;
+  height: 15px;
+}
+.tab-menu .tab-btn ul li {
+  padding: 0px 15px;
+}
+.tab-menu .tab-btn ul li:last-child {
+  padding-right: 0;
+}
+.tab-menu .tab-btn ul li a.active {
+  font-family: var(--bold);
+  color: var(--point);
+}
+.tab-menu .tab-btn > a {
+  background-color: var(--point);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+.tab-cont ul {
+  display: flex;
+  justify-content: space-between;
+}
+.tab-cont ul li {
+  position: relative;
+}
+.tab-cont ul li:hover {
+  .background {
+    display: block;
+  }
+  .ranking {
+    display: none;
+  }
+}
+.tab-cont .background {
+  width: 220px;
+  height: 314.28px;
+  background-color: #00000091;
+  position: absolute;
+  display: none;
+}
+.tab-cont .background .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.tab-cont .background a {
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.tab-cont .background a:hover {
+  background-color: var(--point);
+  border: 1px solid var(--point);
+}
+.tab-cont img {
+  width: 220px;
+}
+.tab-cont .ranking {
+  font-size: 50px;
+  font-family: var(--bold);
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  text-shadow: 0px 0px 7px #535353;
+}
+.tab-cont > div {
+  display: none;
+}
+.tab-cont > div:first-child {
+  display: block;
+}
+.tab-cont h2 {
+  width: 180px;
+  margin: 0 auto;
+  font-family: var(--bold);
+  text-align: center;
+  padding-top: 15px;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.tab-cont .text2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+.tab-cont .text2 p {
+  font-size: 15px;
+  padding: 0px 10px 0px 0px;
+}
+.tab-cont .text2 > img {
+  width: 13px;
+  height: 13px;
+  margin: 1px 3px 0px 10px;
+}
