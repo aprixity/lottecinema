@@ -41,6 +41,23 @@ window.onload = function () {
     });
   });
 
+  // special tab menu
+  const stabBtn = document.querySelectorAll('.stab-btn > ul > li');
+  const stabCont = document.querySelectorAll('.stab-cont > div');
+
+  stabCont.forEach((el) => (el.style.display = 'none'));
+  stabCont[0].style.display = 'block';
+
+  stabBtn.forEach((sbtn, sindex) => {
+    sbtn.addEventListener('click', () => {
+      stabBtn.forEach((sbtn) => sbtn.classList.remove('sactive'));
+      sbtn.classList.add('sactive');
+
+      stabCont.forEach((scont) => (scont.style.display = 'none'));
+      stabCont[sindex].style.display = 'block';
+    });
+  });
+
   // 슬라이드
   var swiper = new Swiper('.mySwiper', {
     cssMode: true,
