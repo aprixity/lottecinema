@@ -176,7 +176,7 @@
 }
 .preview {
   width: 1200px;
-  height: 400px;
+  height: 390px;
   margin: 0 auto;
   border-bottom: 1px solid var(--point);
   position: relative;
@@ -202,7 +202,7 @@
 }
 .preview img {
   width: 380px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .preview > ul {
   display: flex;
@@ -221,8 +221,7 @@
   top: 10px;
 }
 .preview p {
-  font-size: 20px;
-  padding-top: 5px;
+  font-size: 18px;
 }
 .preview ul li a p span {
   font-family: var(--bold);
@@ -235,9 +234,10 @@
 }
 .special {
   width: 1200px;
-  height: 400px;
+  height: 380px;
   margin: 0 auto;
   position: relative;
+  border-bottom: 1px solid var(--point);
 }
 .special > .specialText {
   display: flex;
@@ -315,7 +315,7 @@
   font-family: var(--bold);
   font-size: 50px;
   color: transparent;
-  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-width: 0.3px;
   -webkit-text-stroke-color: #fff;
 }
 .stab-menu > .stab-cont p {
@@ -325,4 +325,77 @@
   transform: translate(-50%, -50%);
   color: #fff;
   font-size: 20px;
+}
+
+/* event */
+#event-wrap {
+  width: 100%;
+  padding-top: 30px;
+}
+.event {
+  width: 1200px;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+  border-bottom: 1px solid var(--point);
+}
+.event > h1 {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-family: var(--bold);
+  font-size: 25px;
+}
+.event > a {
+  border: 1px solid var(--point);
+  padding: 10px 20px;
+  border-radius: 30px;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+}
+.event > a:hover {
+  background-color: var(--point);
+  color: #fff;
+}
+.event img {
+  width: 285px;
+  padding-bottom: 10px;
+}
+.event > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.event > ul > li {
+  position: relative;
+}
+.event p {
+  width: 270px;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: var(--bold);
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.event span {
+  font-size: 13px;
+  color: #535353;
+}
+
+/* mid-menu */
+.mid {
+  width: 1200px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 50px;
+}
+.mid ul {
+  display: flex;
+  justify-content: space-between;
+}
+.mid img {
+  width: 200px;
 }
