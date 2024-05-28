@@ -126,3 +126,55 @@
 .nav > ul > li > ul > li > a:hover {
   color: var(--point);
 }
+
+/* footer */
+#footer {
+  width: 100%;
+  padding-top: 30px;
+  background-color: var(--gray);
+}
+.footer {
+  width: 1200px;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 50px;
+}
+.footer img {
+  padding-bottom: 30px;
+}
+.footer ul {
+  display: flex;
+  padding-top: 5px;
+}
+.footer ul li {
+  padding-left: 10px;
+  font-size: 13px;
+}
+.footer ul li:first-child {
+  padding-left: 0;
+}
+.footer ul li::after {
+  content: '|';
+  margin-left: 10px;
+}
+.footer ul li:last-child::after {
+  content: '';
+}
+.footer ul li a strong {
+  text-decoration: underline;
+}
+.footer address {
+  padding-top: 30px;
+  font-size: 13px;
+}
+.footer .address li:nth-child(4)::after {
+  content: '';
+}
+.footer .address li a {
+  text-decoration: underline;
+}
+.footer .copyright {
+  font-size: 13px;
+  padding-top: 5px;
+}
