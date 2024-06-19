@@ -570,6 +570,10 @@
   .preview ul li a p {
     font-size: 15px;
   }
+  .preview h6 {
+    font-size: 11px;
+    top: 18px;
+  }
 
   /* special */
   #special-wrap {
